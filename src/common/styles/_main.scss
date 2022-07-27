@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: "PT Serif", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 375px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1240px;
+	min-width: 375px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+a {
+    display: inline-flex;
+    color: $maingreen;
+    text-decoration: none;
+	text-align: center;
+
+	&:hover {
+        opacity: 0.8;
+		transition-duration: 0.3s;
+	}
+}
+
+button {
+	border: 1px solid $maingreen;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: $maingreen;
+	color: $white;
+
+	&:hover {
+		transition-duration: 0.3s;
+	}
+}
+
+img {
+	display: block;
+}
+
+.title {
+	font-weight: 700;
+	color: $maingreen;
+
+	&--22 {
+		font-size: 22px;
+		line-height: 31px;
+		letter-spacing: 0.352px;
+		text-transform: uppercase;
+	}
+
+	&--26 {
+		font-size: 26px;
+		line-height: 36px;
+		letter-spacing: 0.312px;
+		text-transform: capitalize;
+	}
+
+	&--35 {
+		font-size: 35px;
+		line-height: 72px;
+		letter-spacing: 0.66px;
+		text-transform: uppercase;
+	}
+
+	&--31 {
+		font-size: 31px;
+		line-height: 47px;
+	}
+
+	&--45 {
+		font-size: 45px;
+		line-height: 58px;
+		letter-spacing: 0.45px;
+	}
+
+	&--55 {
+		font-size: 55px;
+		line-height: 72px;
+		letter-spacing: 0.66px;
+	}
+	
+}
+
+.text {
+	color: $maingreen;
+
+	&--28 {
+		font-size: 28px;
+		line-height: 45px;
+	}
+	
+	&--21 {
+		font-size: 21px;
+		line-height: 31px;
+	}
+
+	&--19 {
+		font-size: 19px;
+		line-height: 27px;
+	}
+
+	&--18 {
+		font-size: 18px;
+		line-height: 29px;
+	}
+}
+
+.mask {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	background-color: $black-25;
+}
+
+.notFound {
+	height: 1080px;
+	background-position: center;
+	background-size: cover;
+
+	&--ua {
+		background-image: url(../../../static/img/404ua.png);
+	}
+
+	&--en {
+		background-image: url(../../../static/img/404en.png);
+	}
+
+	&--ru {
+		background-image: url(../../../static/img/404ru.png);
+	}
+}
+
+@media (max-width: 991px) {
+	.title {
+
+		&--35 {
+			font-size: 27px;
+			line-height: 40px;
+		}
+
+		&--45 {
+			font-size: 28px;
+			line-height: 33px;
+			letter-spacing: 0.45px;
+		}
+	
+		&--55 {
+			font-size: 36px;
+			line-height: 44px;
+			letter-spacing: 0.66px;
+		}
+		
+	}
+
+	.notFound {
+		height: 800px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.title {
+
+		&--31 {
+			font-size: 23px;
+			line-height: 40px;
+		}
+		
+	}
+
+	.notFound {
+		height: 660px;
+	}
+
+}

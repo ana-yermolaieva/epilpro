@@ -1,0 +1,18 @@
+.slick-slider,
+.slick-list,
+.slick-slide,
+.slick-slide > div {
+    height: 100%;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-track {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+

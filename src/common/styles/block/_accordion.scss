@@ -1,0 +1,29 @@
+.accordion {
+    margin-bottom: 60px;
+
+    &__btn-box {
+        padding: 15px;
+        background-color: $main;
+    }
+
+    &__btn {
+        width: 100%;
+        font-size: 18px;
+        border: none;
+        color: $maingreen;
+        background-color: $main;
+        cursor: pointer;
+        text-align: center;
+        padding: 5px 0 5px 5px;
+    }
+
+    &__btn:hover {
+        text-decoration: underline;
+        transition-duration: 1s;
+    }
+
+    &__info {
+        padding: 15px;
+        margin: 0;
+    }
+}

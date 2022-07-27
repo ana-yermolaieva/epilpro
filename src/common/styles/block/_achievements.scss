@@ -1,0 +1,59 @@
+.achievements {
+    background: linear-gradient(to bottom, $main 50%, $white 50%);
+    padding-bottom: 30px;
+
+    &__info {
+        padding: 20px;
+        background-color: $white;
+        border-radius: 6px;
+        box-shadow: 1px 1px 4px $black-25;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &__item-outer {
+        width: 33.333%;
+        padding: 20px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item-icon {
+        display: block;
+        order: -1;
+        margin-bottom: 10px;
+    }
+
+    &__item-title {
+        margin-bottom: 10px;
+    }
+
+    &__item-info {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .achievements {
+        &__item-outer {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .achievements {
+        &__item-outer {
+            width: 100%;
+        }
+    }
+}

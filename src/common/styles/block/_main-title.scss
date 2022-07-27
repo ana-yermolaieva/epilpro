@@ -1,0 +1,30 @@
+.main-title {
+    background-color: $main;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__info {
+        max-width: 920px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-title {
+
+        &__title {
+            max-width: 260px;
+        }
+    }
+}

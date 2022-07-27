@@ -1,0 +1,156 @@
+.footer {
+    background-color: $maingreen;
+
+    &__container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $white;
+    }
+
+    &__social-logo {
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__social-logo-img {
+        width: 164px;
+        height: 113px;
+    }
+
+    &__social-links-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__social-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        border: 1px solid $white;
+        margin-left: 10px;
+
+        &:hover {
+            border: 1px dotted $white;
+            transition-duration: 0.3s;
+        }
+    }
+
+    &__info {
+        margin-top: 30px;
+    }
+
+    &__info-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info-link-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-link {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.17px;
+        color: $white;
+        margin-bottom: 10px;
+        position: relative;
+
+        &:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+    }
+
+    &__info-contacts-list {
+        max-width: 419px;
+    }
+
+    &__info-title {
+        margin-bottom: 27px;
+        color: $white;
+    }
+
+    &__info-contacts-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__info-contacts-key {
+        width: 95px;
+        margin: 0 14px 28px 0;
+        letter-spacing: 0.17px;
+        color: $white;
+    }
+
+    &__info-contacts-info {
+        width: 288px;
+        color: $white;
+    }
+
+    &__info-time-box {
+        width: 177px;
+        
+    }
+    
+    &__info-time {
+        color: $white;
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        color: $white;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+
+        &__info-box {
+            flex-wrap: wrap;
+        }
+
+        &__info-link-list {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+
+        &__social {
+            border-bottom: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__info {
+            display: none;
+        }
+
+        &__copyright {
+            margin-top: 50px;
+        }
+    }
+}

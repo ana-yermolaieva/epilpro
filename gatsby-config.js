@@ -1,8 +1,11 @@
 const { languages, defaultLanguage } = require('./languages');
 
+const siteUrl = `https://katarinaepil.com`
+
 module.exports = {
   siteMetadata: {
-    title: "Katarina Epil"
+    title: "Katarina Epil",
+    siteUrl: `https://katarinaepil.com`
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -32,7 +35,7 @@ module.exports = {
       options: {
         languages,
         defaultLanguage,
-        siteUrl: `https://example.com`,
+        siteUrl: `https://katarinaepil.com/1w2p3/graphql`,
         i18nextOptions: {
           defaultNS: 'common',
           lowerCaseLng: true,
@@ -53,7 +56,7 @@ module.exports = {
     },
     { resolve: 'gatsby-plugin-sitemap',
       options: {
-        // exclude: ['/**/404', '/**/404.html'],
+        exclude: ['/**/404', '/**/404.html'],
         query: `
           {
             site {
@@ -62,42 +65,38 @@ module.exports = {
               }
             }
             allSitePage(filter: {context: {i18n: {routed: {eq: false}}}}) {
-              edges {
-                node {
-                  context {
-                    i18n {
-                      defaultLanguage
-                      languages
-                      originalPath
-                    }
+              nodes {
+                context {
+                  i18n {
+                    defaultLanguage
+                    languages
+                    originalPath
                   }
-                  path
                 }
+                path
               }
             }
           }
         `,
-        serialize: ({site, allSitePage}) => {
-          return allSitePage.edges.map((edge) => {
-            const {languages, originalPath, defaultLanguage} = edge.node.context.i18n;
-            const {siteUrl} = site.siteMetadata;
-            const url = siteUrl + originalPath;
-            const links = [
-              {lang: defaultLanguage, url},
-              {lang: 'x-default', url}
-            ];
-            languages.forEach((lang) => {
-              if (lang === defaultLanguage) return;
-              links.push({lang, url: `${siteUrl}/${lang}${originalPath}`});
-            });
-            return {
-              url,
-              changefreq: 'daily',
-              priority: originalPath === '/' ? 1.0 : 0.7,
-              links
-            };
-          });
-        }
+        resolveSiteUrl: () => siteUrl,
+        serialize: (node) => {
+          const { languages, originalPath, defaultLanguage } = node.context.i18n
+          const url = siteUrl + originalPath
+          const links = [
+            { lang: defaultLanguage, url },
+            { lang: 'x-default', url },
+          ]
+          languages.forEach((lang) => {
+            if (lang === defaultLanguage) return
+            links.push({ lang, url: `${siteUrl}/${lang}${originalPath}` })
+          })
+          return {
+            url,
+            changefreq: 'daily',
+            priority: originalPath === '/' ? 1.0 : 0.7,
+            links,
+          }
+        },
       }
     },
   ],

@@ -24,7 +24,7 @@ export const Certificates = () => {
     return <>
     <div className="certificates">
         <section className="certificates__container container">
-            <h2 className="certificates__title title title--35"><Trans>Дипломы и сертификаты</Trans></h2>
+            <h2 className="certificates__title title title--35"><Trans>ДИПЛОМИ ТА СЕРТИФіКАТИ</Trans></h2>
             <div className="certificates__box" onClick={handleOnImgClick} >
                 {imgList.map(img => 
                     <div className="certificates__item" key={`img:${img}`}>

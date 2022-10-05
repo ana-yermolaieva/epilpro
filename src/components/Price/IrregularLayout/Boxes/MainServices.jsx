@@ -17,7 +17,7 @@ export const MainServices = () => {
             <p className="price__info-text text text--18"><Trans>{el.info}</Trans></p>
             </>)
             }
-            <Link to="/price" className="price__info-link">{t("полный прайс на услуги")}</Link>
+            <Link to="/price" className="price__info-link">{t("повний прайс на послуги")}</Link>
         </div>
         <div className="price__img-box price__img-box--last">
             <img className="price__img" src={allServicesImg} alt="RF-лифтинг груди" />

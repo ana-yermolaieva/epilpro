@@ -9,7 +9,7 @@ import { LaserBlocks } from "./Boxes/LaserBlocks.jsx";
 export const PriceRegularLayout = () => {
     return <>
     <section className="price">
-        <h2 className="visually-hidden"><Trans>Прайс на услуги студии</Trans></h2>
+        <h2 className="visually-hidden"><Trans>Прайс на послуги</Trans></h2>
         <div className="price__container price__container--page container">
         <MainServices />
         <LaserTop />

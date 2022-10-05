@@ -11,7 +11,7 @@ export const LaserBlocks = () => {
             <img className="price__img" src={laserBlocks} alt="лазерная эпиляция" />
         </div>
         <div className="price__info-box price__info-box--page">
-        <h3 className="price__title price__title--box title title--45"><Trans>Вместе - дешевле</Trans></h3>
+        <h3 className="price__title price__title--box title title--45"><Trans>Разом - дешевше</Trans></h3>
             {Price.PRICE.LASER_BLOCKS.map(el =>
             <>
             <div className="price__info">

@@ -12,7 +12,7 @@ export const MainServices = () => {
             <img className="price__img" src={mainServices} alt="лазерная эпиляция" />
         </div>
         <div className="price__info-box price__info-box--page">
-            <h3 className="price__title price__title--box title title--45"><Trans>Прайс на услуги</Trans></h3>
+            <h3 className="price__title price__title--box title title--45"><Trans>Прайс на послуги</Trans></h3>
             {Price.PRICE.MAIN_SERVICES.map(el =>
             <>
             <div className="price__info">

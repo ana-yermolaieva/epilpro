@@ -6,7 +6,7 @@ export const Nav = () => {
     const [ state, setState ] = useState({ open : false });
     const style = {
         mobNavigation: state.open ? "header__box-nav-list header__box-nav-list--mob" : "header__box-nav-list",
-        btnLabel: state.open ? "закрыть меню" : "открыть меню",
+        btnLabel: state.open ? t("закрити меню") : t("відкрити меню"),
     }
 
     const handleMenu = () => {
@@ -18,12 +18,12 @@ export const Nav = () => {
     return <>
         <nav className="header__box-nav" open={state} >
             <div className={style.mobNavigation}>
-                <Link to="/" className="link header__box-nav-link header__box-nav-link--mob">{t("Главная")}</Link>
-                <Link to="/about" className="link header__box-nav-link header__box-nav-link--mob">{t("О нас")}</Link>
-                <Link to="/services" className="link header__box-nav-link header__box-nav-link--mob">{t("Услуги")}</Link>
+                <Link to="/" className="link header__box-nav-link header__box-nav-link--mob">{t("Головна")}</Link>
+                <Link to="/about" className="link header__box-nav-link header__box-nav-link--mob">{t("Про нас")}</Link>
+                <Link to="/services" className="link header__box-nav-link header__box-nav-link--mob">{t("Послуги")}</Link>
                 <Link to="/price" className="link header__box-nav-link header__box-nav-link--mob">{t("Прайс")}</Link>
                 <Link to="/blog" className="link header__box-nav-link header__box-nav-link--mob">{t("Блог")}</Link>
-                <Link to="/contacts" className="link header__box-nav-link header__box-nav-link--mob">{t("Контакты")}</Link>
+                <Link to="/contacts" className="link header__box-nav-link header__box-nav-link--mob">{t("Контакти")}</Link>
             </div>
             <button type="button" className="header__box-nav-btn button" onClick={handleMenu} aria-label={style.btnLabel}>
                 {state.open 

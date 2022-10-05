@@ -28,13 +28,13 @@ export class AccordionItem extends Component {
             </div>
             <div className="services__accordion-info" open={this.setState.open} style={style}>
                 <p className="services__accordion-info-title text text--21"><Trans>{this.props.description}</Trans></p>
-                <p className="services__accordion-list-label text text--21"><Trans>показания к проведению процедуры:</Trans></p>
+                <p className="services__accordion-list-label text text--21"><Trans>показання для проведення процедури:</Trans></p>
                 <ul className="services__accordion-list">   
                     {this.props.indications.map((e) => {
                         return <li className="services__accordion-list-item text text--21" key={`${this.props.title}.indications.${e}`}><Trans>{e}</Trans></li>
                     })}
                 </ul>
-                <p className="services__accordion-list-label text text--21"><Trans>противопоказания к проведению процедуры:</Trans></p>
+                <p className="services__accordion-list-label text text--21"><Trans>протипоказання для проведення процедури:</Trans></p>
                 <ul className="services__accordion-list">
                     {this.props.contraindications.map((e) => {
                         return <li className="services__accordion-list-item text text--21" key={`${this.props.title}.contraindications.${e}`}><Trans>{e}</Trans></li>

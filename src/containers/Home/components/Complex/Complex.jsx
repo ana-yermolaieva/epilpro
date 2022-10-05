@@ -13,14 +13,14 @@ export const Complex = () => {
                     <img className="complex__img" src={homeInfo} alt="девушки" />
                 </div>
                 <article className="complex__info-box">
-                    <h2 className="complex__info-title title title--45">{t("Здоровая и шелковистая кожа - это шаг на пути к уверенности в себе")}</h2>
-                    <p className="complex__info text text--19">{t("С комплексом услуг от “Katarina Epil” - Вы забудете о высыпаниях на коже и первых морщинках, о потерявшей упругость коже, вросших волосках и раздражениях от бритья!")}</p>
+                    <h2 className="complex__info-title title title--45">{t("Здорова та шовковиста шкіра - це шаг на шляху до впевненості в собі")}</h2>
+                    <p className="complex__info text text--19">{t("З комплексом послуг від “Katarina Epil” - Ви забудете про висипання на шкірі та перші зморшки, про втрачену пружність шкіри, вросле волосся та подразнення від гоління!")}</p>
                     <ul className="complex__info-list">
-                        <li className="complex__info-item text text--19">{t("Лазерная эпиляция")}</li>
-                        <li className="complex__info-item text text--19">{t("Электроэпиляция")}</li>
-                        <li className="complex__info-item text text--19">{t("RF-лифтинг")}</li>
-                        <li className="complex__info-item text text--19">{t("Карбоновый пилинг")}</li>
-                        <li className="complex__info-item text text--19">{t("Elos-омоложение")}</li>
+                        <li className="complex__info-item text text--19">{t("Лазерна епіляція")}</li>
+                        <li className="complex__info-item text text--19">{t("Електроепіляція")}</li>
+                        <li className="complex__info-item text text--19">{t("RF-ліфтинг")}</li>
+                        <li className="complex__info-item text text--19">{t("Карбоновий пілінг")}</li>
+                        <li className="complex__info-item text text--19">{t("Elos-омолодження")}</li>
                     </ul>
                 </article>
             </div>

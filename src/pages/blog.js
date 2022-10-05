@@ -7,7 +7,7 @@ import { Footer } from "../components/Footer/Footer.jsx";
 export default function BlogPage({data}) {
     return <>
     <Header />
-    <Blog data={data.wp} path={data.locales.edges[0].node.language} list="blog"/>
+    <Blog data={data.wp} list="blog"/>
     <Footer />
     </>
 }

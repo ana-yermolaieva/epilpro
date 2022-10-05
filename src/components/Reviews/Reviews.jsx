@@ -34,7 +34,7 @@ export const Reviews = () => {
     return <> 
     <div className="reviews">
         <section className="reviews__container container">
-            <h2 className="reviews__title title title--45">{t("Что о нас говорят...")}</h2>
+            <h2 className="reviews__title title title--45">{t("Що про нас кажуть...")}</h2>
             <Slider {...settings} className="reviews__box">
                 {Data.REVIEWS.map(user => {
                     return <ReviewItem key={`${user.clientEng}.review`} userInfo={user} />

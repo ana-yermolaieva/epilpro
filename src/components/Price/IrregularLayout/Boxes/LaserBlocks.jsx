@@ -20,7 +20,7 @@ export const LaserBlocks = () => {
             <p className="price__info-text text text--18"><Trans>{el.info}</Trans></p>
             </>)
             }
-            <Link to="/price" className="price__info-link">{t("прайс на ELOS-эпиляцию")}</Link>
+            <Link to="/price" className="price__info-link">{t("прайс на ELOS-епіляцію")}</Link>
         </div>
     </div>
     </>

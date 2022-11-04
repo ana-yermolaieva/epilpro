@@ -88,7 +88,7 @@
         color: #094709;
         text-transform: uppercase;
         text-align: center;
-        padding: 15px 0 16px;
+        padding: 14px 0 15px;
         font-size: 17px;
         width: 70px;
         cursor: pointer;
@@ -109,7 +109,7 @@
     &__box-lng-lang--open {
         display: flex;
         justify-content: center;
-        margin: 16px 13px 17px;
+        margin: 14px 13px 15px;
         font-size: 17px;
         width: 25px;
         text-transform: uppercase;
@@ -175,9 +175,9 @@
                 border-bottom: 1px solid $white;
                 color: $white;
 
-                &:first-child {
-                    border-top: 1px solid $white;
-                }
+                // &:first-child {
+                //     border-top: 1px solid $white;
+                // }
 
                 &:last-child {
                     width: max-content;
@@ -192,7 +192,7 @@
 
         &__box-nav-btn {
             display: block;
-            padding: 13px 21px 12px 22px;
+            padding: 13px 21px 10px 22px;
             background-color: $maingreen;
             fill: $white;
             z-index: 2;

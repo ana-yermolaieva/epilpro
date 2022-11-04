@@ -23,5 +23,12 @@
     &__info {
         font-weight: 400;
     }
+}
 
+@media (max-width: 767px) {
+    .adress {
+        &__info {
+            font-size: 22px;
+        }
+    }
 }

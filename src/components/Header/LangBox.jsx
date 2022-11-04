@@ -2,7 +2,8 @@ import React from "react";
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { useState } from "react";
 
-export const LangBox = () => {
+export const LangBox = ({ lang }) => {
+    const language = lang.edges[0].node.language;
     const [ langStyle, setLangStyle] = useState({ flag: 'header__box-lng-flag', lngs: 'header__box-lng-lang'});
     const { languages, changeLanguage } = useI18next();
     
@@ -13,10 +14,11 @@ export const LangBox = () => {
     return <>
         <ul className="header__box-lng">
             <li className={langStyle.flag} onClick={handleOnLangBox} key="langboxFlag">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30">
                     <rect width="40" height="15" fill="#005BBB"/>
                     <rect width="40" height="15" y="15" fill="#FFD500"/>
-                </svg>
+                </svg> */}
+                {language}
             </li>
             {
             languages.map(lng => (<>

@@ -35,11 +35,23 @@
         height: 100%;
         background-color: $white;
         box-shadow: 6px 6px 7px 0px $black-25;
+        overflow: hidden;
+
+        &:hover .blog__item-img, &:hover .blog__item-info {
+            opacity: 0.8;
+            transition-duration: 0.3s;
+        }
     }
 
     &__item-img {
         order: -1;
         height: 380px;
+        object-fit: cover;
+
+        &:hover {
+            transform: scaleX(1.05);
+            transition-duration: 0.3s;
+        }
     }
     
     &__item-title {
@@ -107,11 +119,20 @@
 
 @media (max-width: 767px) {
     .blog {
+
+        &__title {
+            width: 271px;
+            align-self: center;
+            line-height: 41px;
+        }
+
         &__item-outer {
             width: 100%;
         }
 
         &__btn {
+            margin-top: 20px;
+
             &:hover {
                 background-color: $maingreen;
                 color: $white;

@@ -7,7 +7,7 @@ import { Footer } from "../components/Footer/Footer.jsx";
 export default function HomePage({data}) {
   
   return <>
-    <Header data={data.path}/>
+    <Header data={data.locales}/>
     <Home data={data} path={data.locales.edges[0].node.language}/>
     <Footer />
   </>

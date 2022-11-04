@@ -23,8 +23,13 @@
 @media (max-width: 767px) {
     .main-title {
 
+        &__container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
         &__title {
-            max-width: 260px;
+            max-width: 257px;
         }
     }
 }

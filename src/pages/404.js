@@ -8,7 +8,7 @@ export default function UnknownPage({ data }) {
     let imgLang = `notFound notFound--${info}`;
     
     return <>
-    <Header />
+    <Header data={data.locales}/>
     <div className={imgLang} />
     <Footer />
     </>

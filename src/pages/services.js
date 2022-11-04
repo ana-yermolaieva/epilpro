@@ -4,9 +4,9 @@ import { Header } from "../components/Header/Header.jsx";
 import { Footer } from "../components/Footer/Footer.jsx";
 import { Services } from "../containers/Services/Services.jsx";
  
-export default function ServicesPage() {
+export default function ServicesPage({data}) {
     return <>
-    <Header />
+    <Header data={data.locales}/>
     <Services />
     <Footer />
     </>

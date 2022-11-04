@@ -26,6 +26,7 @@ export const Reviews = () => {
               settings: {
                 slidesToShow: 1,
                 adaptiveHeight: false,
+                autoplay: false,
               }
             }
         ]

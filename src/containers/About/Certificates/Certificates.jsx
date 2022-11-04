@@ -12,7 +12,7 @@ export const Certificates = () => {
     const handleOnImgClick = (e) => {
         if (e.target.parentElement.classList.contains('certificates__item') && document.documentElement.clientWidth > 767) {
             e.target.parentElement.classList.toggle('certificates__item--opened');
-            e.target.classList.toggle('certificates__item--opened');
+            e.target.classList.toggle('certificates__img--opened');
             setState({...state, isClicked: state.isClicked ? false : true})
         }
     }

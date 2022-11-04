@@ -93,6 +93,7 @@
     }
 
     &__info-contacts-info {
+        text-align: left;
         width: 288px;
         color: $white;
     }
@@ -143,6 +144,10 @@
             border-bottom: none;
             flex-direction: column;
             align-items: center;
+        }
+
+        &__social-logo {
+            margin-left: 0;
         }
 
         &__info {

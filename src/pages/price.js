@@ -4,9 +4,9 @@ import { Header } from "../components/Header/Header.jsx";
 import { PriceRegularLayout } from "../components/Price/RegularLayout/PriceRegularLayout.jsx";
 import { Footer } from "../components/Footer/Footer.jsx";
 
-export default function PricePage() {
+export default function PricePage({data}) {
     return <>
-    <Header />
+    <Header data={data.locales}/>
     <PriceRegularLayout />
     <Footer />
     </>

@@ -15,8 +15,8 @@ export const Header = ({ data }) => {
                 <img src={logoHeader} className="header__logo-img" alt="logo" aria-label="перейти на головну сторінку" />
             </Link>
             <div className="header__box">
-                <Nav info={data} />
-                <UserBox info={Data.USER_CONTACTS}/>
+                <Nav />
+                <UserBox info={Data.USER_CONTACTS} lang={data}/>
             </div>
         </div>
     </header>

@@ -92,9 +92,12 @@
             padding-top: 60px;
         }
 
-        &__box,
-        &__img-box {
+        &__box {
             padding-bottom: 30px;
+        }
+
+        &__img-box {
+            padding: 0 30px 30px;
         }
 
         &__box:nth-child(even) {
@@ -129,6 +132,10 @@
         &__info-title,
         &__info {
             text-align: center;
+        }
+
+        &__info-title {
+            font-size: 26px;
         }
 
         &__accordion-info-title,

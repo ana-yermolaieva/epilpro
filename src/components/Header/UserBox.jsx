@@ -4,7 +4,8 @@ import fbIcon from "../../common/img/common_fb.svg";
 import instaIcon from "../../common/img/common_insta.svg";
 import phoneIcon from "../../common/img/common_phone.svg";
 
-export const UserBox = ({ info }) => {
+export const UserBox = ({ info, lang }) => {
+
     return <>
     <div className="header__box-user">
         <div className="header__box-user-links">
@@ -19,7 +20,7 @@ export const UserBox = ({ info }) => {
                 <img src={fbIcon} className="header__box-user-img" alt="facebook" aria-label="перейти на страницу в facebook"></img>
             </a>
         </div>
-        <LangBox />
+        <LangBox lang={lang}/>
     </div>
     </>
 }

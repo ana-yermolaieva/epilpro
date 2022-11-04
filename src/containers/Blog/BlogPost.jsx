@@ -14,7 +14,7 @@ const BlogPost = ({ data }) => {
     console.log(content)
 
     return <>
-    <Header />
+    <Header data={data.locales}/>
     <div className="blog-post">
         <div className="blog-post__container container">
             <article className="blog-post__article">

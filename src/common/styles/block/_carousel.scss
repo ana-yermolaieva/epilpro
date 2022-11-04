@@ -3,7 +3,6 @@
 
     &__container {
         width: 100%;
-        // height: 832px;
         height: 100%;
     }
 
@@ -54,5 +53,14 @@
 
     &__item-page {
         height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        
+        &__all-pages {
+            align-items: center;
+        }
     }
 }

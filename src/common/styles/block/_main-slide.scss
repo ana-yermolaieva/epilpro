@@ -106,22 +106,26 @@
             text-align: center;
         }
 
-        &__img-box {
-            justify-content: center;
-            order: -1;
-            margin-bottom: 30px;
-        }
+        // &__img-box {
+        //     justify-content: center;
+        //     order: -1;
+        //     margin-bottom: 30px;
+        // }
 
-        &__img {
-           width: 300px;
-           box-shadow: none;
-        }
+        // &__img {
+        //    width: 300px;
+        //    box-shadow: none;
+        // }
 
         &__btn {
             &:hover {
                 background-color: $maingreen;
                 color: $white;
             }
+        }
+
+        &__img-box {
+            display: none;
         }
     }
 }

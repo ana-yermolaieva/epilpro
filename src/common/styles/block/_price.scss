@@ -147,11 +147,20 @@
 @media (max-width: 767px) {
     .price {
 
+        &__container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
         &__box {
             flex-direction: column;
 
             &--page:nth-child(even) {
                 flex-direction: column;
+            }
+
+            &:first-child > .price__img-box {
+                display: none;
             }
         }
 
@@ -164,6 +173,11 @@
             &--last {
                 order: -1;
             }
+        }
+
+        &__img {
+            height: 500px;
+            object-fit: cover;
         }
 
         &__info-box {
@@ -186,5 +200,14 @@
             padding: 11px 26px 11px;
         }
 
+    }
+}
+
+@media (max-width: 540px) {
+    .price {
+
+        &__img {
+            height: 300px;
+        }
     }
 }

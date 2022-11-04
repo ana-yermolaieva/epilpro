@@ -6,7 +6,7 @@ import { Footer } from "../components/Footer/Footer.jsx";
 
 export default function BlogPage({data}) {
     return <>
-    <Header />
+    <Header data={data.locales}/>
     <Blog data={data.wp} list="blog"/>
     <Footer />
     </>

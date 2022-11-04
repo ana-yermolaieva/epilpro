@@ -7,7 +7,7 @@ import { Reviews } from "../components/Reviews/Reviews.jsx";
 
 export default function About({ data }) {
     return <>
-    <Header />
+    <Header data={data.locales}/>
     <AboutPage data={data}/>
     <Reviews />
     <Footer />

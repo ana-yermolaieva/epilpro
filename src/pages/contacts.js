@@ -6,9 +6,9 @@ import { Contacts } from "../containers/Contacts/Contacts.jsx";
 import { Reviews } from "../components/Reviews/Reviews.jsx";
 import { Footer } from "../components/Footer/Footer.jsx";
 
-export default function ContactsPage() {
+export default function ContactsPage({data}) {
     return <>
-    <Header />
+    <Header data={data.locales}/>
     <InfoTitle />
     <Contacts />
     <Reviews />

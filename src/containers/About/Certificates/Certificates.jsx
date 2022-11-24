@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Trans } from "gatsby-plugin-react-i18next";
+import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
 import certElectroFirst from "../../../common/img/cert-epil1.jpg";
 import certElectroSecond from "../../../common/img/cert-epil2.jpg";
 import certLaser from "../../../common/img/cert-laser.jpg";
 
 export const Certificates = () => {
+    const { t } = useTranslation();
     const [ state, setState ] = useState({ isClicked: false});
-
     const imgList = [certElectroFirst, certLaser, certElectroSecond]
 
     const handleOnImgClick = (e) => {
@@ -28,7 +28,7 @@ export const Certificates = () => {
             <div className="certificates__box" onClick={handleOnImgClick} >
                 {imgList.map(img => 
                     <div className="certificates__item" key={`img:${img}`}>
-                        <img className="certificates__img" src={img} alt="сертификат"/>
+                        <img className="certificates__img" src={img} alt={t("сертифікат")}/>
                     </div>
                 )}
             </div>

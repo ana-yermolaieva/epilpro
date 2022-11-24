@@ -19,9 +19,9 @@ export const UserInfo = ({ info }) => {
                 <h3 className="footer__info-title title--22">{t("Контакти:")}</h3>
                 <div className="footer__info-contacts-box">
                     <span className="footer__info-contacts-key text--18">{t("Адреса :")}</span>
-                    <a className="footer__info-contacts-info text--18" href={info.google} target="blank" aria-label="відкрити адресу студії на мапі"><Trans>{info.location} {info.location_complex}</Trans></a>
+                    <a className="footer__info-contacts-info text--18" href={info.google} target="blank" aria-label={t("перейти на google maps")}><Trans>{info.location} {info.location_complex}</Trans></a>
                     <span className="footer__info-contacts-key text--18">{t("Телефон :")}</span>
-                    <a className="footer__info-contacts-info text--18" href={info.phone_number} aria-label="подзвонити в студію">{info.phone_number_outer}</a>
+                    <a className="footer__info-contacts-info text--18" href={info.phone_number} aria-label={t("подзвонити в студію")}>{info.phone_number_outer}</a>
                 </div>
             </article>
             <article className="footer__info-time-list">

@@ -2,14 +2,16 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Header } from "../components/Header/Header.jsx";
 import { Footer } from "../components/Footer/Footer.jsx";
+import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
 
 export default function UnknownPage({ data }) {
+    const { t } = useTranslation();
     let info = data.locales.edges[0].node.language;
     let imgLang = `notFound notFound--${info}`;
     
     return <>
     <Header data={data.locales}/>
-    <div className={imgLang} />
+    <div className={imgLang} aria-label={t("сторінку не знайдено")}/>
     <Footer />
     </>
 }

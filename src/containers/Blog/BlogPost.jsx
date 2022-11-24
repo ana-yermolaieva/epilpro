@@ -20,7 +20,7 @@ const BlogPost = ({ data }) => {
             <article className="blog-post__article">
                 <h2 className="blog-post__title title title--45">{t(post.title)}</h2>
                 <div className="blog-post__item">
-                    <img className="blog-post__img" src={post.featuredImage.node.sourceUrl} alt="зображення шкіри"/>
+                    <img className="blog-post__img" src={post.featuredImage.node.sourceUrl} alt={t("зображення шкіри")}/>
                     <div className="blog-post__info">
                     {content.map(el => (
                       <div className={el.props.className} key={`content-${el.key}`}

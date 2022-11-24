@@ -18,12 +18,12 @@ export const Nav = () => {
     return <>
         <nav className="header__box-nav" open={state} >
             <div className={style.mobNavigation}>
-                <Link to="/" className="link header__box-nav-link header__box-nav-link--mob">{t("Головна")}</Link>
-                <Link to="/about" className="link header__box-nav-link header__box-nav-link--mob">{t("Про нас")}</Link>
-                <Link to="/services" className="link header__box-nav-link header__box-nav-link--mob">{t("Послуги")}</Link>
-                <Link to="/price" className="link header__box-nav-link header__box-nav-link--mob">{t("Прайс")}</Link>
-                <Link to="/blog" className="link header__box-nav-link header__box-nav-link--mob">{t("Блог")}</Link>
-                <Link to="/contacts" className="link header__box-nav-link header__box-nav-link--mob">{t("Контакти")}</Link>
+                <Link to="/" className="link header__box-nav-link header__box-nav-link--mob" aria-label={t("перейти на головну сторінку")}>{t("Головна")}</Link>
+                <Link to="/about" className="link header__box-nav-link header__box-nav-link--mob" aria-label={t("перейти на сторінку 'про нас'")}>{t("Про нас")}</Link>
+                <Link to="/services" className="link header__box-nav-link header__box-nav-link--mob" aria-label={t("перейти на сторінку 'послуги'")}>{t("Послуги")}</Link>
+                <Link to="/price" className="link header__box-nav-link header__box-nav-link--mob" aria-label={t("перейти на сторінку 'прайс'")}>{t("Прайс")}</Link>
+                <Link to="/blog" className="link header__box-nav-link header__box-nav-link--mob" aria-label={t("перейти на сторінку 'блог'")}>{t("Блог")}</Link>
+                <Link to="/contacts" className="link header__box-nav-link header__box-nav-link--mob" aria-label={t("перейти на сторінку 'контакти'")}>{t("Контакти")}</Link>
             </div>
             <button type="button" className="header__box-nav-btn button" onClick={handleMenu} aria-label={style.btnLabel}>
                 {state.open 

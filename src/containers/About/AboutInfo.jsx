@@ -1,14 +1,16 @@
 import React from "react";
-import { Trans } from "gatsby-plugin-react-i18next";
+import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
 import aboutPic from "../../common/img/about-pic.jpg";
 
 export const AboutInfo = () => {
+    const { t } = useTranslation();
+
     return <>
     <div className="about">
         <div className="about__container container">
             <div className="about__box">
                 <div className="about__img-box">
-                    <img className="about__img" src={aboutPic} alt="фото из студии" />
+                    <img className="about__img" src={aboutPic} alt={t("фото зі студії")} />
                 </div>
                 <section className="about__info-box">
                     <h2 className="about__title title title--35"><Trans>студія Katarina Epil</Trans></h2>

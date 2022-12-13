@@ -9,7 +9,7 @@ export const MainServices = () => {
     return <>
     <div className="price__box price__box--page">
         <div className="price__img-box">
-            <img className="price__img" src={mainServices} alt="лазерная эпиляция" />
+            <img className="price__img" src={mainServices} alt={t("RF-ЛІФТИНГ ОБЛИЧЧЯ І ТІЛА")} />
         </div>
         <div className="price__info-box price__info-box--page">
             <h3 className="price__title price__title--box title title--45"><Trans>Прайс на послуги</Trans></h3>

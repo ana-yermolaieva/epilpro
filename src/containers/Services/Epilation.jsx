@@ -1,14 +1,16 @@
 import React from "react";
-import { Trans } from "gatsby-plugin-react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import epil from "../../common/img/service-epil.jpg";
 
 const LIST = ["Електроепіляція", "Лазерна ELOS-епіляція"];
 
 export const Epilation = () => {
+    const { t } = useTranslation();
+
     return <>
     <div className="services__box">
         <div className="services__img-box">
-            <img className="services__img" src={epil} alt="лазерная эпиляция" />
+            <img className="services__img" src={epil} alt={t("Лазерна ELOS-епіляція")}/>
         </div>
         <article className="services__info-box">
             <h3 className="services__info-title title title--35"><Trans>Для твоєї гладкості:</Trans></h3>

@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { CarouselContext } from "./CarouselContext.jsx";
 import { Page } from "./Page.jsx";
 
 export const Carousel = ({ children }) => {
-
+    const { t } = useTranslation();
     const[width, setWidth] = useState(1200);
     const[offset, setOffset] = useState(0);
     const windowElRef = useRef();
@@ -54,13 +55,13 @@ export const Carousel = ({ children }) => {
                             <FaChevronLeft className="carousel__arrow" onClick={handleLeftArrowClick} style={{
                                 fill: `#094709`,
                                 height: `2em`,
-                            }} />
+                            }} aria-label={t("кнопка вліво")}/>
                         </div>
                         <div  className="carousel__btn-item">
                             <FaChevronRight className="carousel__arrow" onClick={handleRightArrowClick} style={{
                                 fill: `#094709`,
                                 height: `2em`,
-                            }} />
+                            }} aria-label={t("кнопка вправо")}/>
                         </div>
                     </div>
                 </div>

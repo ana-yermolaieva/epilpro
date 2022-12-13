@@ -1,10 +1,12 @@
 import React from "react";
-import { Trans } from "gatsby-plugin-react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import face from "../../common/img/service-cosmetology.jpg";
 
 const LIST = ["RF-ліфтинг", "ELOS-омолодження", "Карбоновий пілінг"];
 
 export const Cosmetology = () => {
+    const { t } = useTranslation();
+
     return <>
     <div className="services__box">
         <article className="services__info-box">
@@ -15,7 +17,7 @@ export const Cosmetology = () => {
             <p className="services__info text text--21"><Trans>Використовуємо тільки професійні лінійки косметичних засобів, перевірені досвідом та часом. Видимий ефект одразу після першої процедури!</Trans></p>
         </article>
         <div className="services__img-box">
-            <img className="services__img" src={face} alt="омоложение" />
+            <img className="services__img" src={face} alt={t("ELOS-омолодження")} />
         </div>
     </div>
     </>

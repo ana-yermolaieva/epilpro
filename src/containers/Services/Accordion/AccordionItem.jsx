@@ -24,7 +24,7 @@ export class AccordionItem extends Component {
         return <>
         <div className="services__accordion-item accordion__item">
             <div className="services__accordion accordion__btn-box" onClick={this.handleClick}>
-                <button className="services__accordion-title accordion__btn title title--35" type="button"><Trans>{this.props.title}</Trans></button>
+                <button className="services__accordion-title accordion__btn title title--35" type="button" aria-label="відкрити опис послуги"><Trans>{this.props.title}</Trans></button>
             </div>
             <div className="services__accordion-info" open={this.setState.open} style={style}>
                 <p className="services__accordion-info-title text text--21"><Trans>{this.props.description}</Trans></p>

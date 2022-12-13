@@ -10,7 +10,7 @@ export const Complex = () => {
         <div className="complex__container container">
             <div className="complex__box">
                 <div className="complex__img-box">
-                    <img className="complex__img" src={homeInfo} alt="девушки" />
+                    <img className="complex__img" src={homeInfo} alt={t("зображення")} />
                 </div>
                 <article className="complex__info-box">
                     <h2 className="complex__info-title title title--45">{t("Здорова та шовковиста шкіра - це шаг на шляху до впевненості в собі")}</h2>

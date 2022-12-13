@@ -14,7 +14,7 @@ export const LangBox = ({ lang }) => {
 
     return <>
         <ul className="header__box-lng">
-            <li className={langStyle.flag} onClick={handleOnLangBox} key="langboxFlag">
+            <li className={langStyle.flag} onClick={handleOnLangBox} key="langboxFlag" aria-label={t("мова сайту")}>
                 {language}
             </li>
             {

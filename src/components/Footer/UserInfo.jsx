@@ -10,10 +10,10 @@ export const UserInfo = ({ info }) => {
         <div className="footer__info-box">
             <article className="footer__info-link-list">
                 <h3 className="visually-hidden"><Trans>навігація</Trans></h3>
-                <Link to="/about" className="footer__info-link link text--18">{t("Про нас")}</Link>
-                <Link to="/services" className="footer__info-link link text--18">{t("Послуги")}</Link>
-                <Link to="/price" className="footer__info-link link text--18">{t("Прайс")}</Link>
-                <Link to="/blog" className="footer__info-link link text--18">{t("Блог")}</Link>
+                <Link to="/about" className="footer__info-link link text--18" aria-label={t("перейти на сторінку 'про нас'")}>{t("Про нас")}</Link>
+                <Link to="/services" className="footer__info-link link text--18" aria-label={t("перейти на сторінку 'послуги'")}>{t("Послуги")}</Link>
+                <Link to="/price" className="footer__info-link link text--18" aria-label={t("перейти на сторінку 'прайс'")}>{t("Прайс")}</Link>
+                <Link to="/blog" className="footer__info-link link text--18" aria-label={t("перейти на сторінку 'блог'")}>{t("Блог")}</Link>
             </article>  
             <article className="footer__info-contacts-list">
                 <h3 className="footer__info-title title--22">{t("Контакти:")}</h3>

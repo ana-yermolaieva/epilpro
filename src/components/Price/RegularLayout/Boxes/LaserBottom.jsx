@@ -9,7 +9,7 @@ export const LaserBottom = () => {
     return <>
     <div className="price__box price__box--page">
         <div className="price__img-box">
-            <img className="price__img" src={laserBottomImg} alt="лазерная эпиляция" />
+            <img className="price__img" src={laserBottomImg} alt={t("Лазерна епіляція")} />
         </div>
         <div className="price__info-box">
         {Price.PRICE.LASER_BOTTOM.map(el =>

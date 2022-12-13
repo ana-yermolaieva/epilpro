@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Header } from "../components/Header/Header.jsx";
 import { Footer } from "../components/Footer/Footer.jsx";
-import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 export default function UnknownPage({ data }) {
     const { t } = useTranslation();

@@ -17,10 +17,10 @@ export const MainServices = () => {
             <p className="price__info-text text text--18"><Trans>{el.info}</Trans></p>
             </>)
             }
-            <Link to="/price" className="price__info-link">{t("повний прайс на послуги")}</Link>
+            <Link to="/price" className="price__info-link" aria-label={t("відкрити повний прайс на послуги")}>{t("повний прайс на послуги")}</Link>
         </div>
         <div className="price__img-box price__img-box--last">
-            <img className="price__img" src={allServicesImg} alt="RF-лифтинг груди" />
+            <img className="price__img" src={allServicesImg} alt={t("RF-ліфтинг")} />
         </div>
     </div>
     </>

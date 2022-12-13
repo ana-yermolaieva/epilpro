@@ -36,11 +36,6 @@
         background-color: $white;
         box-shadow: 6px 6px 7px 0px $black-25;
         overflow: hidden;
-
-        &:hover .blog__item-img, &:hover .blog__item-info {
-            opacity: 0.8;
-            transition-duration: 0.3s;
-        }
     }
 
     &__item-img {

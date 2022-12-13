@@ -12,15 +12,15 @@ export const UserBox = ({ info, lang }) => {
     return <>
     <div className="header__box-user">
         <div className="header__box-user-links">
-            <a href={info.phone_number} target="_blank" className="header__box-user-link" rel="noreferrer">
-                <img src={phoneIcon} className="header__box-user-img" alt="телефон" aria-label={t("подзвонити в студію")}></img>
+            <a href={info.phone_number} target="_blank" className="header__box-user-link" rel="noreferrer" aria-label={t("подзвонити в студію")}>
+                <img src={phoneIcon} className="header__box-user-img" alt={t("телефон")}></img>
                 <span className="header__box-user-phone">{info.phone_number_outer}</span>
             </a>
-            <a href={info.inst} target="_blank" className="header__box-user-link" rel="noreferrer">
-                <img src={instaIcon} className="header__box-user-img" alt="instagram" aria-label={t("перейти на сторінку instagram")}></img>
+            <a href={info.inst} target="_blank" className="header__box-user-link" rel="noreferrer" aria-label={t("перейти на сторінку instagram")}>
+                <img src={instaIcon} className="header__box-user-img" alt="instagram"></img>
             </a>
-            <a href={info.fb} target="_blank" className="header__box-user-link" rel="noreferrer">
-                <img src={fbIcon} className="header__box-user-img" alt="facebook" aria-label={t("перейти на сторінку facebook")}></img>
+            <a href={info.fb} target="_blank" className="header__box-user-link" rel="noreferrer" aria-label={t("перейти на сторінку facebook")}>
+                <img src={fbIcon} className="header__box-user-img" alt="facebook"></img>
             </a>
         </div>
         <LangBox lang={lang}/>

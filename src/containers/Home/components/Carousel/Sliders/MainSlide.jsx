@@ -13,10 +13,10 @@ export const MainSlide = () => {
             <div className="main-slide__info">
                 <h2 className="main-slide__title title title--55">{t("Приходь за гладкою шкірою!")}</h2>
                 <p className="main-slide__text text">{t("Студія лазерної та електроепіляції, апаратної косметології в Одесі. Безкоштовна консультація. Позбавлення від небажаного волосся назавжди. Очищення шкіри на клітинному рівні та омолодження. Безпечно та безболісно.")}</p>
-                <Link to={Data.USER_CONTACTS.inst} className="main-slide__btn btn" target="_blank" rel="noreferrer">{t("записатися онлайн")}</Link>
+                <Link to={Data.USER_CONTACTS.inst} className="main-slide__btn btn" target="_blank" rel="noreferrer" aria-label="перейти в instagram">{t("записатися онлайн")}</Link>
             </div>
             <div className="main-slide__img-box">
-                <img className="main-slide__img" src={legs} alt="изображение"/>
+                <img className="main-slide__img" src={legs} alt={t("зображення")}/>
             </div>
         </div>
     </section>

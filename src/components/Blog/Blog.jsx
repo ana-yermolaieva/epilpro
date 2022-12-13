@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import { BlogCard } from "./BlogCard.jsx";
-import { Trans } from "gatsby-plugin-react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 
 export const Blog = ({ list, data }) => {
+    const { t } = useTranslation();
 
     return <>
     <div className="blog">
@@ -21,8 +22,8 @@ export const Blog = ({ list, data }) => {
             ))}
             </div>
             {list === "blog"
-            ? <Link to="/" className="blog__btn btn"><Trans>на головну</Trans></Link>
-            : <Link to="/blog" className="blog__btn btn"><Trans>в блог</Trans></Link>}
+            ? <Link to="/" className="blog__btn btn" aria-label={t("перейти на головну")}><Trans>на головну</Trans></Link>
+            : <Link to="/blog" className="blog__btn btn" aria-label={t("перейти в блог")}><Trans>в блог</Trans></Link>}
         </section>
     </div>
     </>

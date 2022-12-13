@@ -9,7 +9,7 @@ export const LaserBlocks = () => {
     return <>
     <div className="price__box">
         <div className="price__img-box">
-            <img className="price__img" src={laserImg} alt="лазерная эпиляция" />
+            <img className="price__img" src={laserImg} alt={t("лазерна епіляція")} />
         </div>
         <div className="price__info-box">
             {Price.HOME_PRICE.LASER_BLOCKS.map( el => <>
@@ -20,7 +20,7 @@ export const LaserBlocks = () => {
             <p className="price__info-text text text--18"><Trans>{el.info}</Trans></p>
             </>)
             }
-            <Link to="/price" className="price__info-link">{t("прайс на ELOS-епіляцію")}</Link>
+            <Link to="/price" className="price__info-link" aria-label={t("відкрити повний прайс на ELOS-епіляцію")}>{t("прайс на ELOS-епіляцію")}</Link>
         </div>
     </div>
     </>
